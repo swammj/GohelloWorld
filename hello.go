@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	fmt.Println("AJAJAJA")
 	fmt.Println("Hello razy Fucking World")
 }
