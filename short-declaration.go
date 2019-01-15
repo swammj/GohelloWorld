@@ -45,4 +45,5 @@ func main() {
 	fmt.Println(convertido)
 	fmt.Printf("%T\n", myTipo)
 
+
 }
