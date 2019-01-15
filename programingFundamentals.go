@@ -5,7 +5,13 @@ import (
 	"runtime"
 )
 
-var x bool
+//var x bool
+const (
+	_  = iota// seinicializa en 1
+	kb = 1 << (iota * 10) // lo incrementamos a lo que nosotros querramos
+	mb 						//se incrementa por lo que esta arriba por eso no hay que ponerlo  aun que si se puede.
+	gb
+)
 
 func main() {
 	//*********BOOL********
@@ -55,4 +61,19 @@ func main() {
 	fmt.Printf("%T\n", n)
 	fmt.Printf("%b\n", n)
 	fmt.Printf("%#x\n", n)
+
+	//*********BIT SHIFTING********
+	fmt.Println()
+
+	x := 4
+	fmt.Printf("%d\t\t%b\n", x, x)
+
+	y := x << 1
+	fmt.Printf("%d\t\t%b\n", y, y)
+
+	fmt.Println("*********IOTA to Increment********")
+	fmt.Printf("%d\t\t\t%b\n", kb, kb)
+	fmt.Printf("%d\t\t\t%b\n", mb, mb)
+	fmt.Printf("%d\t\t%b\n", gb, gb)
+
 }
